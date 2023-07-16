@@ -465,17 +465,6 @@
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <style>
         <style-rule element='mark'>
-          <encoding attr='color' field='[none:top_product_category_canceled:nk]' palette='tableau20_10_0' type='palette'>
-            <map to='#b07aa1'>
-              <bucket>&quot;sports_leisure&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;health_beauty&quot;</bucket>
-            </map>
-            <map to='#ffbe7d'>
-              <bucket>&quot;toys&quot;</bucket>
-            </map>
-          </encoding>
           <encoding attr='color' field='[:Measure Names]' type='palette'>
             <map to='#2ca02c'>
               <bucket>&quot;[federated.11hfhgf1bgwfii17og8091az9q04].[sum:total_revenue_year:qk]&quot;</bucket>
@@ -485,6 +474,17 @@
             </map>
             <map to='#d62728'>
               <bucket>&quot;[federated.11hfhgf1bgwfii17og8091az9q04].[sum:total_canceled_orders_year:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:top_product_category_canceled:nk]' palette='tableau20_10_0' type='palette'>
+            <map to='#b07aa1'>
+              <bucket>&quot;sports_leisure&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;health_beauty&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;toys&quot;</bucket>
             </map>
           </encoding>
         </style-rule>
@@ -1368,7 +1368,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='8023' id='19' name='Payment Type All' w='98400' x='800' y='73000'>
+                <zone h='7698' id='19' name='Payment Type All' w='98400' x='800' y='73000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1376,7 +1376,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='18791' id='21' name='Payment Type per Year' w='98400' x='800' y='81023'>
+                <zone h='19116' id='21' name='Payment Type per Year' w='98400' x='800' y='80698'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1397,23 +1397,14 @@
         <zone h='1488' id='8' name='MAU x New Cust' pane-specification-id='4' param='[federated.18w5g9207vbmku18069xe0ln2vps].[:Measure Names]' type-v2='color' w='20000' x='8000' y='2256' />
         <zone h='1488' id='25' name='Repeat Cust' pane-specification-id='1' param='[federated.18w5g9207vbmku18069xe0ln2vps].[:Measure Names]' type-v2='color' w='15700' x='8100' y='17140' />
         <zone h='1488' id='31' name='Tot Revenue x Cancel' pane-specification-id='1' param='[federated.11hfhgf1bgwfii17og8091az9q04].[:Measure Names]' type-v2='color' w='21800' x='9200' y='47209' />
-        <zone fixed-size='160' h='6674' id='34' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='10300' y='83395'>
-          <zone h='3139' id='36' name='Payment Type per Year' pane-specification-id='0' param='[federated.1v5urae1w5c0ih1c34wvm16llvir].[none:payment_type:nk]' type-v2='color' w='16000' x='10300' y='83395'>
-            <zone-style>
-              <format attr='border-color' value='#000000' />
-              <format attr='border-style' value='none' />
-              <format attr='border-width' value='0' />
-              <format attr='margin' value='4' />
-            </zone-style>
-          </zone>
-        </zone>
+        <zone h='2953' id='36' name='Payment Type per Year' pane-specification-id='0' param='[federated.1v5urae1w5c0ih1c34wvm16llvir].[none:payment_type:nk]' type-v2='color' w='14000' x='9200' y='82953' />
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='2300' minheight='2300' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='38' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='99628' id='37' param='vert' type-v2='layout-flow' w='98400' x='800' y='186'>
+            <zone h='100000' id='40' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='99628' id='39' param='vert' type-v2='layout-flow' w='98400' x='800' y='186'>
                 <zone fixed-size='280' h='14674' id='5' is-fixed='true' name='MAU x New Cust' w='98400' x='800' y='186'>
                   <layout-cache minwidth='162' type-h='fixed' type-w='scalable' />
                   <zone-style>
@@ -1487,7 +1478,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='8023' id='19' is-fixed='true' name='Payment Type All' w='98400' x='800' y='73000'>
+                <zone fixed-size='280' h='7698' id='19' is-fixed='true' name='Payment Type All' w='98400' x='800' y='73000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1496,7 +1487,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='18791' id='21' is-fixed='true' name='Payment Type per Year' w='98400' x='800' y='81023'>
+                <zone fixed-size='280' h='19116' id='21' is-fixed='true' name='Payment Type per Year' w='98400' x='800' y='80698'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1505,7 +1496,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='3139' id='36' name='Payment Type per Year' pane-specification-id='0' param='[federated.1v5urae1w5c0ih1c34wvm16llvir].[none:payment_type:nk]' type-v2='color' w='16000' x='10300' y='83395'>
+                <zone h='2953' id='36' name='Payment Type per Year' pane-specification-id='0' param='[federated.1v5urae1w5c0ih1c34wvm16llvir].[none:payment_type:nk]' type-v2='color' w='14000' x='9200' y='82953'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1824,6 +1815,16 @@
         </viewpoint>
         <viewpoint name='Tot Revenue x Cancel'>
           <zoom type='entire-view' />
+          <selection-collection>
+            <node-selection select-tuples='false'>
+              <oriented-node-reference orientation='horizontal'>
+                <node-reference>
+                  <axis>[federated.11hfhgf1bgwfii17og8091az9q04].[none:year:qk]</axis>
+                </node-reference>
+                <page-reference />
+              </oriented-node-reference>
+            </node-selection>
+          </selection-collection>
           <highlight field='[federated.11hfhgf1bgwfii17og8091az9q04].[:Measure Names]'>
             <bucket-selection />
           </highlight>
