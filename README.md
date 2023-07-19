@@ -121,6 +121,52 @@ The increase in growth customers is a reflection of the effectiveness  in sales.
    * The small average number of orders for each customer may be due to the lack of programs or maintenance from business marketing. This can be improved by holding a loyalty program, introducing new products and attracting potential customers for each new product launched.
 
 
+## **Annual Product Category Quality Analysis**
+
+**Overview :**
+
+E-Commerce business performance is of course very closely related to the products available in it. Analyzing product quality in eCommerce can provide decisions for developing a more effective business. By analyzing product quality in e-commerce, we can gain insight on how to better develop our business. Product quality is important because it influences a company's success and helps build its reputation in the customer market. When a company can create high-quality products that continuously meet customer demands, it can result in a higher return on investment and increased revenue. In this section, we will analyze product categories that have a positive impact (in terms of revenue metrics) as well as product categories that have a negative impact (in terms of the number of order cancellation metrics) for the company each year.
+
+![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/bb8c9ddc-dbdb-4355-97d1-d7a5a7e29103)
+
+1. **Table of revenue per year**
+
+   Create a table that contains total company revenue information for each year
+   
+   ![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/de2b45e4-6a99-416b-a8ae-b82382e2b995)
+
+2. **Table of the number of canceled orders per year**
+
+   Create a table that contains information on the total number of canceled orders for each year
+   
+   ![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/60e7eb2e-9380-4571-9d09-42607638532e)
+
+   ![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/5120eb75-1db6-4128-becb-310c53ce7cbf)
+
+   **Observation :**
+   * There is an increase in revenue every year. although the previous data, namely repeat orders, showed a decrease from 2017 to 2018. This could be due to a sharp increase in the number of new customers each year
+   * There was an increase in canceled orders from 2016 to 2018. However, the value is not on a large scale, still in the hundreds compared to the thousands. It is better if additional data is needed regarding the review of reasons for canceling orders to avoid an increase in the number of cancels in the following year
+  
+3. **Table of the top categories that generate the largest revenue per year**
+
+   Create a table containing the product category names that provide the highest total revenue for each year
+
+   ![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/4d767c3c-1213-4f31-856f-b871c06c50ef)
+
+4. **Table of categories that experienced the most canceled orders per year**
+
+   Create a table containing the names of the product categories that have the highest number of canceled orders for each year
+   
+   ![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/a9ef8ba2-9d46-4cf8-b140-8fb02472c4ff)
+
+   ![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/95b6addf-4ddc-42e4-8d14-7bddfa3a57b8)
+
+   Observation :
+   * It can be seen that the types of product categories, both top revenue and top canceled, all have different types each year
+   * However, there was an interesting thing in 2018, it was found that the Health Beauty category was in the same position as the top highest revenue and canceled. This could be because the most orders were in the health and beauty categories
+
+
+
 
 
 
