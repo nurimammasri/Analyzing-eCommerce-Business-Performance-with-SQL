@@ -127,19 +127,21 @@ The increase in growth customers is a reflection of the effectiveness  in sales.
 
 E-Commerce business performance is of course very closely related to the products available in it. Analyzing product quality in eCommerce can provide decisions for developing a more effective business. By analyzing product quality in e-commerce, we can gain insight on how to better develop our business. Product quality is important because it influences a company's success and helps build its reputation in the customer market. When a company can create high-quality products that continuously meet customer demands, it can result in a higher return on investment and increased revenue. In this section, we will analyze product categories that have a positive impact (in terms of revenue metrics) as well as product categories that have a negative impact (in terms of the number of order cancellation metrics) for the company each year.
 
-![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/bb8c9ddc-dbdb-4355-97d1-d7a5a7e29103)
+![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/cbf62b91-7996-45c2-adc3-48dd519248ac)
+
+![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/a93b0d38-15d2-4d96-b1b0-e5b5b4cd1b3f)
 
 1. **Table of revenue per year**
 
    Create a table that contains total company revenue information for each year
    
-   ![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/de2b45e4-6a99-416b-a8ae-b82382e2b995)
+   ![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/0a1d9f58-00e8-4242-8d33-c85008010063)
 
 2. **Table of the number of canceled orders per year**
 
    Create a table that contains information on the total number of canceled orders for each year
    
-   ![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/60e7eb2e-9380-4571-9d09-42607638532e)
+   ![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/11e46eba-2712-483c-b76b-df559e9ffb32)
 
    ![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/5120eb75-1db6-4128-becb-310c53ce7cbf)
 
@@ -151,13 +153,13 @@ E-Commerce business performance is of course very closely related to the product
 
    Create a table containing the product category names that provide the highest total revenue for each year
 
-   ![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/4d767c3c-1213-4f31-856f-b871c06c50ef)
+   ![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/1c7235f9-f5d3-4728-bfb3-3e35eee954ec)
 
 4. **Table of categories that experienced the most canceled orders per year**
 
    Create a table containing the names of the product categories that have the highest number of canceled orders for each year
    
-   ![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/a9ef8ba2-9d46-4cf8-b140-8fb02472c4ff)
+   ![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/74038d52-4882-48a9-8f17-e02e06045ca2)
 
    ![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/95b6addf-4ddc-42e4-8d14-7bddfa3a57b8)
 
@@ -165,6 +167,44 @@ E-Commerce business performance is of course very closely related to the product
    * It can be seen that the types of product categories, both top revenue and top canceled, all have different types each year
    * However, there was an interesting thing in 2018, it was found that the Health Beauty category was in the same position as the top highest revenue and canceled. This could be because the most orders were in the health and beauty categories
 
+
+## **Analysis of Annual Payment Type Usage**
+
+**Overview :**
+
+Effective income analysis requires consideration of the payment method and its impact on customer behavior. Research indicates that customers are likely to abandon their purchase if their preferred payment option is unavailable. In e-commerce, offering an open payment system with diverse options is essential. Analyzing the performance of each payment type will provide valuable insights, enabling strategic partnerships with payment providers to enhance customer satisfaction and optimize revenue streams.
+
+1. **Total usage of each type of payment all time**
+
+   Displays the total usage of each type of payment at all time, sorted from the favorite
+
+   ![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/98a35659-1327-4a4b-833e-1d9bb8edbf0c)
+   
+   ![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/d524b7cd-78cc-494e-ad57-3b339641a6bd)
+
+   **Observation :**
+   * There are 4 common payment methods, Credit Card, Boleto, Voucher, Debit Card
+   * The use of credit cards as a means of payment is the most compared to other types of payments. By looking at this, companies can work with credit card provider banks to provide more attractive promotions. Further analysis can be carried out on customer behavior in using credit cards, such as the payment credit type chosen, what product categories are usually purchased with credit cards, etc.
+   * Because many customers use credit cards, boleto and vouchers, bonuses or promotions can be given that target the most favorite payment types.
+
+2. **Details of the amount used for each type of payment for each year**
+
+   Displays detailed information on the amount of usage for each type of payment for each year
+   
+   ![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/922ddb58-5769-4ebc-a6f1-aa0867a6dcf3)
+
+   ![image](https://github.com/nurimammasri/Analyzing-eCommerce-Business-Performance-with-SQL/assets/54845293/abdd16f4-f631-4221-91ad-67e16f87d4c4)
+
+   **Observation :**
+   * Furthermore, for each type of payment tends to increase significantly every year.
+   * However, payments using vouchers have decreased in 2018. This could be due to a reduction in promotions using vouchers.
+   * Further analysis can be carried out by confirming with other departments, such as Marketing, Analyst or Business Development.
+
+## **Summary**
+
+* Customer activity experienced growth in every metric from 2016 to 2018, including an increase in the number of new customers and Monthly Active Users (MAU). However, repeat customer orders remained stagnant during this period. Moreover, the average number of orders made by customers was only once.
+* The analysis of Product Category Quality revealed a consistent growth in the company's total revenue each year. Interestingly, the most canceled product categories and best selling orders changed annually. Notably, the health beauty category emerged as both the most sold and the most canceled product category.
+* Additionally, each type of payment showed a significant increase year over year. Credit cards were the most commonly used payment method from 2016 to 2018. However, payments made using vouchers experienced a decline in 2018.
 
 
 
